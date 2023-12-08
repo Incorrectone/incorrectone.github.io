@@ -34,4 +34,5 @@ As you can see I kind of want learn more about Embedded things and Optimization,
 
 > Also for full disclosure, Google analytics is enabled on this jekyll site, for ya know so that I can see what are the type of people visit me are. And Cloudflare CDN is responsible for Image hosting! There will never be any Adverts on my blogs.
 {: .prompt-warning }
+
 Thank you for listening and see you Later!
