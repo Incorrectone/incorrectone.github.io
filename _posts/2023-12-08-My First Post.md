@@ -10,7 +10,7 @@ toc: true
 comments: false
 math: true
 
-pin: true
+pin: false
 
 ---
 
@@ -36,3 +36,4 @@ As you can see I kind of want learn more about Embedded things and Optimization,
 {: .prompt-warning }
 
 Thank you for listening and see you Later!
+
