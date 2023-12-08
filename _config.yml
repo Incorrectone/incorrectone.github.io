@@ -14,9 +14,9 @@ timezone: America/New_York
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: theINCORRECTone # the main title
+title: incorrectone # the main title
 
-tagline: Am a dumb idiot, who brute forces everything # it will display as the sub-title
+tagline: Competitve idiot... # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Having fun and doing random things is a neccesity!
@@ -50,7 +50,7 @@ google_site_verification: # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: # fill in your Google Analytics ID
+  id: G-D7KR4V06GT # fill in your Google Analytics ID
 
 # Prefer color scheme setting.
 #
@@ -73,7 +73,7 @@ theme_mode: dark # [light|dark]
 img_cdn: https://imagedelivery.net/-RzD00A8AvA-wBiygHSoCg
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /c7b85f81-1ea7-44f6-c00e-55e8ed219500/public
+avatar: /877a8893-4d0c-44f8-89db-697ec12d8100/public
 
 # boolean type, the global switch for TOC in posts.
 toc: true
