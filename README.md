@@ -1,12 +1,11 @@
-So You have stumbled across my blogging site, that I made for personal devlopment progress and trying to keep a record for myself and share what I learnt with other people! Fell free to read them!
+So, You have stumbled across my blogging site, that I made for personal development progress and try to keep a record of my goals and prgress and share what I learn with other people! Feel free to read them!
 
 You can visit my site at ![theincorrect.one](https://theincorrect.one)
 
 Hope you find something you like! And remember to have fun!
 
-My Site currently uses the Chirpy Theme!
-
-For Using it for yourself visit the links below!
+My site currently uses the Chirpy Jekyll Theme.
+To use this theme for youself visit the links below!
 
 # Chirpy Starter
 
