@@ -16,7 +16,7 @@ timezone: America/New_York
 
 title: incorrectone # the main title
 
-tagline: Competitve idiot... # it will display as the sub-title
+tagline: a Competitve idiot... # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Having fun and doing random things is a neccesity!
