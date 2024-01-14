@@ -1,9 +1,9 @@
 ---
-layout: post
 title: My First Post!
 date: 2023-12-08 13:30:25 +/-1000
 categories: [Blog, Random]
 tags: [introduction]     # TAG names should always be lowercase
+author: incor   
 
 # [true/false]
 
