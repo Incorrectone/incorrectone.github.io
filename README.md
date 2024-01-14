@@ -1,6 +1,6 @@
 So, You have stumbled across my blogging site, that I made for personal development progress and try to keep a record of my goals and prgress and share what I learn with other people! Feel free to read them!
 
-You can visit my site at ![theincorrect.one](https://theincorrect.one)
+You can visit my site at theincorrect.one
 
 Hope you find something you like! And remember to have fun!
 
