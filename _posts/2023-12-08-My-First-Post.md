@@ -21,6 +21,16 @@ Working pretty well, frankly better than I expected, hopefully this can get goin
 
 Till the next blog I make, I want to start on one of the things I have planned.
 
+- [x] Intro post
+- [ ] Make a Paint-like App using Python from scratch
+- [ ] Make a Paint-like App using C/C++ from scratch
+- [ ] Make a Snake Game on an ESP32
+- [ ] Make a Paint-Like Thingy on an ESP32
+- [ ] Learn Assembly for embedded controllers
+- [ ] ...
+- [ ] ...
+- [ ] Learn and Remodel my Site
+
 As you can see I kind of want learn more about Embedded things and Optimization, (also Robotics but maybe later)
 
 > Also for full disclosure, Google analytics is enabled on this jekyll site, for ya know so that I can see what are the type of people visit me are. And Cloudflare CDN is responsible for Image hosting! There will never be any Adverts on my blogs.
