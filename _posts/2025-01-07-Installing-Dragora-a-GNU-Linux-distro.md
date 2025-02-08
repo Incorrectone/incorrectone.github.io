@@ -49,7 +49,7 @@ However, there is one thing we need to do, make the Linux filesystem to a bootab
 
 Using `fdisk` on the mounted disk. Enter the expert mode by typing `x`, then `A` to make a partition BOOTABLE, then choose the partition (`1 or 2`) in my case `1`. Return to the menu by pressing `r` and quit and write by using `w`.
 
-![Final Table](1cc1c30f-0172-4a1a-2426-c73e44a0b300/public){: .w-50 .right}
+![Partition Table](20ccf28b-b097-49d3-6ee5-56e242b85100/public){: .w-50 .right}
 
 Now we are done with partitioning, now start up the `dragora-installer` using the command with same name.
 ## dragora-installer
@@ -64,6 +64,8 @@ Then it will ask you to choose the swap file, if you partitioned correctly your 
 Format again, choose the mount point as `/` and choose done.
 
 It will show you a summary. Choose the packages as needed (choose all if you do not care) and continue. Now wait for the installation, this will take up to 20-30 mins.
+
+![Final Table](1cc1c30f-0172-4a1a-2426-c73e44a0b300/public){: .w-50 .left}
 
 ## Grub Setup
 
