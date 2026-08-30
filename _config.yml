@@ -95,10 +95,10 @@ theme_mode: dark # [light | dark]
 # will be added to all media resources (site avatar, posts' images, audio and video files) paths starting with '/'
 #
 # e.g. 'https://cdn.com'
-cdn: https://imagedelivery.net/-RzD00A8AvA-wBiygHSoCg
+cdn: https://images.theincorrect.one
 
 # the avatar on sidebar, support local or CORS resources
-avatar: /877a8893-4d0c-44f8-89db-697ec12d8100/public
+avatar: /logo.svg
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.

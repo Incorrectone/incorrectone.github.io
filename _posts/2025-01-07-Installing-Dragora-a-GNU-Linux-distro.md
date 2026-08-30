@@ -43,13 +43,13 @@ Choose `new` on the empty space, choose the size by subtracting at least a gigab
 
 Now go to each partition and choose `write` to save the changes and done. If you mess up something and come back to this step, you can delete every partition and start again. and finally, `quit`.
 
-![Partition Table](e567d245-d84f-4b6e-1dd9-bc935fc70b00/public){: .w-50 .right}
+![Partition Table](Dragora/partitions.png){: .w-50 .right}
 
 However, there is one thing we need to do, make the Linux filesystem to a bootable segment.
 
 Using `fdisk` on the mounted disk. Enter the expert mode by typing `x`, then `A` to make a partition BOOTABLE, then choose the partition (`1 or 2`) in my case `1`. Return to the menu by pressing `r` and quit and write by using `w`.
 
-![Partition Table](20ccf28b-b097-49d3-6ee5-56e242b85100/public){: .w-50 .right}
+![Partition Table](Dragora/test.png){: .w-50 .right}
 
 Now we are done with partitioning, now start up the `dragora-installer` using the command with same name.
 ## dragora-installer
@@ -65,7 +65,7 @@ Format again, choose the mount point as `/` and choose done.
 
 It will show you a summary. Choose the packages as needed (choose all if you do not care) and continue. Now wait for the installation, this will take up to 20-30 mins.
 
-![Final Table](1cc1c30f-0172-4a1a-2426-c73e44a0b300/public){: .w-50 .left}
+![Final Table](Dragora/filedistribution.png){: .w-50 .left}
 
 ## Grub Setup
 
@@ -77,4 +77,4 @@ Congratulations! Dragora 3.0 beta 2 is now installed! On startup login as root w
 
 Proceed through the setup, and done!
 
-![Desktop](c4169f91-41b9-4660-2548-a758ee27f800/public){: .w-50}
+![Desktop](Dragora/finalimage.png){: .w-50}
