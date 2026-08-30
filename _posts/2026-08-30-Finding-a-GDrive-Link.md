@@ -64,7 +64,7 @@ More bonus information was also available if you had logged in from Google SSO w
 > High on speculation. Also, yes I know buzzwords, buzzwords.
 {: .prompt-warning }
 
-Now one has to wonder wwhy this site was working this way? Why did the developer decide to make a hardcoded list of whitelisted emails? I think the answer is pretty simple and straightforward.
+Now one has to wonder why this site was working this way? Why did the developer decide to make a hardcoded list of whitelisted emails? I think the answer is pretty simple and straightforward.
 
 The site is made using free tools. There is nothing more to it than that. Cost savings. The developers most likely used free Firebase APIs, Drive APIs, and a free hosting platform. Meaning the site most likely does not have a 'backend' to speak of. All of the business logic is directly baked into the frontend. Now this would be fine if the site was made properly.
 
