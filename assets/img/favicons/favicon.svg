@@ -12,8 +12,9 @@
 	.st6{fill:#FF0000;}
 	.st7{fill:#FF2A2A;}
 	.st8{fill:#1A1A1A;}
+	.st9{fill:#FFFFFF;stroke:#1A1A1A;stroke-width:64;stroke-miterlimit:10;}
 </style>
-<rect x="0" y="0" class="st0" width="1920" height="1920"/>
+<circle class="st9" cx="960" cy="960" r="908"/>
 <g id="layer1">
 	<g id="g1389" transform="translate(0,-12)">
 		<circle id="path737" class="st1" cx="596.8" cy="452.4" r="13.4"/>
