@@ -12,6 +12,13 @@ order: 5
 
 {% assign photos = site.data.photos %}
 
+{% comment %}
+  Cloudflare Image Transformations settings for grid tiles. Each photo at each
+  width/height/fit counts once a month against the free 5,000, while quality
+  and format don't. Must be enabled on the zone; the lightbox uses originals.
+{% endcomment %}
+{% assign thumb_options = 'width=600,height=600,fit=cover,quality=75,format=auto,onerror=redirect' %}
+
 {% if photos and photos.size > 0 %}
 {% assign groups = '' | split: '' | push: '' %}
 {% for key in photos %}
@@ -33,7 +40,7 @@ order: 5
       {% assign count = count | plus: 1 %}
       {% assign name = key | split: '/' | last | split: '.' | first | replace: '-', ' ' | replace: '_', ' ' %}
       {% comment %} No <img> here: the script below adds it as the tile nears the viewport {% endcomment %}
-      <a class="popup img-link shimmer" href="{{ site.cdn }}/{{ key | uri_escape }}" aria-label="{{ name | escape }}"></a>
+      <a class="popup img-link shimmer" href="{{ site.cdn }}/{{ key | uri_escape }}" data-thumb="{{ site.cdn }}/cdn-cgi/image/{{ thumb_options }}/{{ key | uri_escape }}" aria-label="{{ name | escape }}"></a>
     {% endif %}
   {% endfor %}
   {% endcapture %}
@@ -191,10 +198,16 @@ order: 5
       var photo = new Image();
       photo.alt = link.getAttribute('aria-label');
       photo.decoding = 'async';
-      photo.onload = photo.onerror = function () {
+      function done() {
         link.classList.remove('shimmer');
+      }
+      photo.onload = done;
+      /* If the thumbnail fails, fall back to the original once */
+      photo.onerror = function () {
+        photo.onerror = done;
+        photo.src = link.href;
       };
-      photo.src = link.href;
+      photo.src = link.dataset.thumb;
       link.appendChild(photo);
     }
 
