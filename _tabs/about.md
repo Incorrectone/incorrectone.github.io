@@ -4,8 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-Nothing Interesting really, But I do like studying Math and Statistics. I learned about Data Science and have liked programming since childhood. I like reading books and going to random places. Maybe I will make a post about them too.
+Nothing interesting, really, but I do like studying math and statistics. I have liked programming since childhood. I like reading books and going to random places. Maybe I will make a post about them too.
 
-I like dumb and unfunny jokes, and always have failed to remain serious and dedicate myself to something. I really hate it, and always try to fix it but have never been able to achieve it. I also like Game developemnt as a hobby, especially using Unity or Python (pyGame Library). Have created somethings using them. I also like marathons.
+I like dumb and unfunny jokes, and I have always failed to remain serious and dedicate myself to something. I really hate that and always try to fix it, but I have never been able to. I also like game development as a hobby, especially using Unity or Python (the Pygame library), and I have created some things with them. I also like marathons.
 
-Always have had an interest in physics maybe one day I will do something with that.
+I have always had an interest in physics; maybe one day I will do something with that.
