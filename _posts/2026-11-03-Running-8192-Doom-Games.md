@@ -14,14 +14,14 @@ math: false
 pin: false
 
 image:
-  path: doom-bucket/doom8192.png
+  path: https://images.theincorrect.one/cdn-cgi/image/width=1200,format=auto,onerror=redirect/doom-bucket/doom8192.png
   alt: Doom Mosaic with 8192 instances
 
 ---
 
 Running DOOM (1993) on different electronic devices has been a thing on the internet for a long time. But the opposite has been lacking severely. So in this blog we try to run DOOM at scale on an AWS EC2 `c7a.32xlarge` spot instance.
 
-You can see the final 8192 mosaic on YouTube in 4K.
+You can see the final 8192 mosaic on YouTube in 4K. There's also a [4K still of the mosaic](https://images.theincorrect.one/doom-bucket/doom8192.png) (13 MB PNG).
 
 {% include embed/youtube.html id='Oq6W3fukuM4' %}
 
