@@ -12,6 +12,10 @@ on:
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
+  # Rebuild daily so new photos uploaded to R2 show up on the Photography page
+  schedule:
+    - cron: "30 2 * * *"
+
 permissions:
   contents: read
   pages: write
@@ -44,6 +48,34 @@ jobs:
         with:
           ruby-version: 3.3
           bundler-cache: true
+
+      - name: List photos from R2
+        # Explicit shell enables pipefail, so an R2 error fails the job instead
+        # of deploying an empty gallery
+        shell: bash
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.R2_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.R2_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: auto
+          R2_ACCOUNT_ID: ${{ secrets.R2_ACCOUNT_ID }}
+          R2_BUCKET: ${{ vars.R2_BUCKET }}
+          PHOTO_PREFIX: imageshowcase/
+        run: |
+          mkdir -p _data
+          if [ -z "$AWS_ACCESS_KEY_ID" ] || [ -z "$R2_ACCOUNT_ID" ] || [ -z "$R2_BUCKET" ]; then
+            echo "::warning::R2 secrets/variables not set; Photography page will be empty."
+            echo '[]' > _data/photos.json
+            exit 0
+          fi
+          aws s3api list-objects-v2 \
+            --bucket "$R2_BUCKET" \
+            --prefix "$PHOTO_PREFIX" \
+            --endpoint-url "https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com" \
+            --query 'reverse(sort_by(Contents[?Size > `0`] || `[]`, &LastModified))[].Key' \
+            --output json \
+          | jq '[.[] | select(test("\\.(jpe?g|png|webp|avif|gif)$"; "i"))]' \
+          > _data/photos.json
+          echo "Found $(jq length _data/photos.json) photos"
 
       - name: Build site
         run: bundle exec jekyll b -d "_site${{ steps.pages.outputs.base_path }}"
