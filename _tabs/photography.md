@@ -39,7 +39,8 @@ order: 5
   {% endcapture %}
 
   {% if count > 0 %}
-  {% assign slug = group | slugify %}
+  {% assign slug = '' %}
+  {% if group != '' %}{% assign slug = group | slugify %}{% endif %}
   <section class="photo-section" data-group="{{ slug }}">
     {% if group != '' %}
     {% assign label = group | replace: '-', ' ' | replace: '_', ' ' %}
